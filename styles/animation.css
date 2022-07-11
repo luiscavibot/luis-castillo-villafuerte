@@ -1,0 +1,81 @@
+.primera-orbita {
+	animation: orbitaUno 16s linear infinite;
+}
+
+@keyframes orbitaUno {
+	0% {
+		/* transform: rotateY(0deg); */
+		transform: rotate3d(0, 1, 1, 0deg);
+	}
+	100% {
+		/* transform: rotateY(360deg); */
+		transform: rotate3d(0, 1, 1, 360deg);
+	}
+}
+.segunda-orbita {
+	animation: orbitaDos 18s linear infinite;
+}
+
+@keyframes orbitaDos {
+	0% {
+		transform: rotate3d(1, 1, 0, 0deg);
+		/* @apply -translate-y-1/2; */
+	}
+	100% {
+		transform: rotate3d(1, 1, 0, 360deg);
+	}
+}
+.tercera-orbita {
+	animation: orbitaTres 8s linear infinite;
+}
+
+@keyframes orbitaTres {
+	0% {
+		transform: rotate3d(1, 0, 0, 0deg);
+		/* @apply -translate-y-1/2; */
+	}
+	100% {
+		transform: rotate3d(1, 0, 0, 360deg);
+	}
+}
+.cuarta-orbita {
+	animation: orbitaCuatro 8s linear infinite;
+}
+
+@keyframes orbitaCuatro {
+	0% {
+		transform: rotate(-15deg) scale(1.07);
+	}
+	25% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(15deg) scale(1.07);
+	}
+	75% {
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		transform: rotate(-15deg) scale(1.07);
+	}
+}
+/* .contenedor-orbitas {
+	animation: contenedorOrbitas 1s linear infinite;
+}
+@keyframes contenedorOrbitas {
+	0% {
+		right: 0px;
+	}
+	45% {
+		right: 2px;
+	}
+	50% {
+		right: 0px;
+	}
+	75% {
+		right: -2px;
+	}
+	100% {
+		right: 0px;
+	}
+} */
