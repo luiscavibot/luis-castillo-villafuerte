@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	@apply bg-fondoOscuro;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-gris rounded-lg;
+}

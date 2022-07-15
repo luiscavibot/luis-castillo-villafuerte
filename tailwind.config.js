@@ -10,6 +10,7 @@ module.exports = {
 				fondoOscuro: '#231E23',
 				claro: '#DEEEEA',
 				verde: '#39A6A3',
+				gris: '#363337',
 			},
 		},
 	},

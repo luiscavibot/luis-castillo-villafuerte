@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import './animation.css';
+@import './barraDesplazamiento.css';
