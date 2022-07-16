@@ -77,14 +77,16 @@ const ExperienciaLaboral = () => {
 				<div className="col-span-6 text-sm relative z-10">
 					<h1 className="mt-14 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
-						INTELEGO{' '}
+						Discursos visuales sobre lo Afroperuano - Bicentenario
+						del Perú{' '}
 						<span className="font-normal text-base">&#125;</span>
 					</h1>
 					<p className="text-claro/70 mb-3">
-						Jun. 2018 - ene. 2022 &#40; 3 años y 8 meses &#41;
+						Ene. 2022 &#40; 2 meses &#41;
 					</p>
 					<div>
-						<ListItem text="Laboré como líder del equipo de diseño y desarrollo." />
+						<ListItem text="Fui contratado como Teach Lead." />
+						<ListItem text="El proyecto visibiliza el trabajo de investigación desarrollado por una comisión de Investigación creada especialmente para este proyecto en el marco del Bicentenario de mi país." />
 					</div>
 					<h1 className="mt-10 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
@@ -92,10 +94,11 @@ const ExperienciaLaboral = () => {
 						<span className="font-normal text-base">&#125;</span>
 					</h1>
 					<p className="text-claro/70 mb-3">
-						Ene. 2022 - actualidad &#40; 7 meses &#41;
+						Jun. 2022 - actualidad &#40; 2 meses &#41;
 					</p>
 					<div>
-						<ListItem text="Actualmente laboro en esta oficina como líder del equipo de diseño y desarrollo." />
+						<ListItem text="Actualmente estoy contratado en esta empresa como desarrollar Frontend." />
+						<ListItem text="El proyecto busca construir el sitio web corporativo de la empresa." />
 					</div>
 				</div>
 			)}

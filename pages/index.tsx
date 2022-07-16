@@ -36,6 +36,31 @@ const Home: NextPage = () => {
 		};
 	}, []);
 
+	const acercaDeMiRef = useRef<HTMLDivElement>(null);
+	const goToAcercaDeMi = () => {
+		if (acercaDeMiRef.current) {
+			acercaDeMiRef.current!.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	const experienciaMiRef = useRef<HTMLDivElement>(null);
+	const goToExperiencia = () => {
+		if (experienciaMiRef.current) {
+			experienciaMiRef.current!.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	const portafolioRef = useRef<HTMLDivElement>(null);
+	const goToPortafolio = () => {
+		if (portafolioRef.current) {
+			portafolioRef.current!.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	const skillsRef = useRef<HTMLDivElement>(null);
+	const goToSkills = () => {
+		if (skillsRef.current) {
+			skillsRef.current!.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
 	return (
 		<div>
 			<Head>
@@ -44,16 +69,23 @@ const Home: NextPage = () => {
 			</Head>
 
 			<main className="bg-fondoOscuro text-claro">
-				<div className="container mx-auto px-12">
-					<div className="h-screen  relative flex items-center">
+				<div className="container relative mx-auto px-12">
+					<div className="h-screen relative flex items-center">
 						<div className="absolute z-10 top-0 right-0 animate__fadeIn animate__animated animate__delay-2s">
-							<MenuPrincipal />
+							<MenuPrincipal
+								goTos={{
+									goToAcercaDeMi,
+									goToExperiencia,
+									goToPortafolio,
+									goToSkills,
+								}}
+							/>
 						</div>
 						<div className="flex w-full">
 							<div className="basis-1/2 animate__animated animate__zoomIn">
 								<PresentacionPrincipal />
 							</div>
-							<div className="basis-1/2 flex justify-center animate__animated animate__flipInY">
+							<div className="basis-1/2 flex justify-center animate__animated animate__rotateIn">
 								<AnimacionAtomica />
 							</div>
 						</div>
@@ -65,7 +97,7 @@ const Home: NextPage = () => {
 					</div>
 					<div
 						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
-						id="acercaDeMi">
+						ref={acercaDeMiRef}>
 						<div className="flex items-center col-start-3 col-span-full">
 							<SubTtitulo title="Acerca de mí" />
 						</div>
@@ -78,10 +110,15 @@ const Home: NextPage = () => {
 							<FotoPersonal />
 						</div>
 					</div>
-					<div className="pt-28 grid grid-cols-12 gap-5 relative z-10">
+					<div
+						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
+						ref={experienciaMiRef}>
 						<ExperienciaLaboral />
 					</div>
-					<div className="pt-28 grid grid-cols-12 gap-x-5 relative z-10">
+					<div
+						ref={portafolioRef}
+						className="pt-28 grid grid-cols-12 gap-x-5 relative z-10"
+						id="portafolio">
 						<Image
 							src={circuferenciaCocentrica1}
 							className="absolute right-0 top-0"
@@ -94,7 +131,10 @@ const Home: NextPage = () => {
 							<OtrosProyectos />
 						</div>
 					</div>
-					<div className="pt-28 grid grid-cols-12 relative z-10">
+					<div
+						ref={skillsRef}
+						className="pt-28 grid grid-cols-12 relative z-10"
+						id="skills">
 						<Image
 							src={circuferenciaCocentrica1}
 							className="absolute right-0 top-0"
@@ -107,7 +147,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 					<div className="pt-60 grid grid-cols-12 relative z-10">
-						<div className="flex flex-col items-center justify-center col-start-3 col-span-8">
+						<div className="flex flex-col items-center justify-center col-start-3 col-span-8 mb-6">
 							<p className="text-verde text-2xl font-bold">
 								¡Gracias por tu visita!
 							</p>
@@ -120,8 +160,6 @@ const Home: NextPage = () => {
 					{showFirma && <FirmaContactoSecunadrio />}
 				</div>
 			</main>
-
-			<footer className=""></footer>
 		</div>
 	);
 };

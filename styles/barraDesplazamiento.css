@@ -7,3 +7,13 @@
 ::-webkit-scrollbar-thumb {
 	@apply bg-gris rounded-lg;
 }
+::-webkit-scrollbar-corner {
+	@apply bg-fondoOscuro;
+}
+
+::-webkit-scrollbar:horizontal {
+	display: none;
+}
+:root {
+	--animate-delay: 0.25s !important;
+}

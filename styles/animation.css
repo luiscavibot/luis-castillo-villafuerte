@@ -59,6 +59,22 @@
 		transform: rotate(-15deg) scale(1.07);
 	}
 }
+
+.bounce-arrow {
+	animation: arrowBounce 1.5s infinite;
+}
+@keyframes arrowBounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 /* .contenedor-orbitas {
 	animation: contenedorOrbitas 1s linear infinite;
 }

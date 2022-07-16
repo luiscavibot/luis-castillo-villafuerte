@@ -1,10 +1,11 @@
-import React, { FC } from 'react';
+import React, { FC, useId } from 'react';
 import CardProyecto from '../components/CardProyecto';
 import { AiOutlineTool } from 'react-icons/ai';
 import { StaticImageData } from 'next/future/image';
+
 interface Props {
 	data: Information;
-	src: StaticImageData;
+	src: StaticImageData | null;
 }
 interface Information {
 	id: string;
@@ -18,13 +19,13 @@ const Proyect: FC<Props> = ({ data, src }) => {
 	return (
 		<>
 			<div className="col-start-3 col-span-4">
-				<CardProyecto src={src} />
+				<CardProyecto src={src!} />
 				<ul className="absolute flex items-center gap-2 text-sm">
 					<li>
 						<AiOutlineTool size="1rem" color="#DEEEEA" />
 					</li>
-					{tools.map((tool, index) => (
-						<li key={tool + index}>{tool}</li>
+					{tools.map((tool) => (
+						<li key={data.id + data.title}>{tool}</li>
 					))}
 				</ul>
 			</div>

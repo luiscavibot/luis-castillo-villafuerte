@@ -15,15 +15,26 @@ export default function PresentacionPrincipal() {
 			</h1>
 			<h2 className="text-3xl mt-2">y soy un Full stack developer.</h2>
 			<p className="text-verde mt-14 font-semibold">
-				Disfruto construir sitios y aplicaciones web extraordinarios y
+				Disfruto construir aplicaciones web extraordinarias y
 				actualmente tengo la oportunidad de trabajar en la{' '}
-				<span className="text-claro cursor-pointer">
+				<span
+					className="text-claro cursor-pointer hover:underline"
+					onClick={() => {
+						window.open('https://unmsm.edu.pe/', '_blank');
+					}}>
 					universidad más antigua de América
 				</span>
 				, donde lidero un equipo de TI que crea productos digitales
 				increíbles.
 			</p>
-			<button className="border-2 cursor-pointer bg-white/10 hover:bg-white/25 mt-14 rounded-lg px-4 py-2">
+			<button
+				onClick={() => {
+					window.open(
+						'/pdf/Curriculum_Vitae_2022-07-04_compressed.pdf',
+						'_blank'
+					);
+				}}
+				className="border-2 cursor-pointer bg-white/10 hover:bg-white/25 mt-14 rounded-lg px-4 py-2">
 				Resumen
 			</button>
 		</>

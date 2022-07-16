@@ -12,21 +12,25 @@ export default function AnimacionAtomica() {
 				src={primeraOrbita}
 				className="absolute top-1/2 right-0 primera-orbita"
 				quality={100}
+				draggable="false"
 			/>
 			<Image
 				src={segundaOrbita}
 				className="absolute top-1/2 right-0 segunda-orbita"
 				quality={100}
+				draggable="false"
 			/>
 			<Image
 				src={terceraOrbita}
 				className="absolute top-1/2 right-0 tercera-orbita"
 				quality={100}
+				draggable="false"
 			/>
 			<Image
 				src={cuartaOrbita}
 				className="absolute top-1/2 right-0 cuarta-orbita"
 				quality={100}
+				draggable="false"
 			/>
 		</div>
 	);
