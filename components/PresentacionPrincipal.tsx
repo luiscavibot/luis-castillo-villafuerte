@@ -15,8 +15,8 @@ export default function PresentacionPrincipal() {
 			</h1>
 			<h2 className="text-3xl mt-2">y soy un Full stack developer.</h2>
 			<p className="text-verde mt-14 font-semibold">
-				Disfruto construir aplicaciones web extraordinarias y
-				actualmente tengo la oportunidad de trabajar en la{' '}
+				Disfruto construir aplicaciones web extraordinarias y tengo la
+				oportunidad de trabajar en la{' '}
 				<span
 					className="text-claro cursor-pointer hover:underline"
 					onClick={() => {

@@ -24,7 +24,7 @@ const PortfolioContent = () => {
 			Recopila un interesante acervo de materiales auditivos, visuales y textuales.`,
 			title: 'Archivo Covid-19 Perú',
 			image: proyectoAc19p,
-			link: 'https://unmsm.edu.pe/',
+			link: 'https://ac19p.unmsm.edu.pe/',
 		},
 		{
 			id: '3',

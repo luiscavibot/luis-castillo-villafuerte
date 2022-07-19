@@ -16,7 +16,7 @@ export const AcercaDeMi = () => {
 				que decidí hacer borrón y cuenta nueva. Me aventuré en hacer un
 				desarrollo propio usando
 				<span className="text-verde font-semibold">
-					HTML, CSS y Javascript puro
+					&nbsp;HTML, CSS y Javascript puro
 				</span>
 				. Al inicio fue muy complicado; pero, luego de muchos esfuerzos,
 				junto a un extraordinario equipo de trabajo, logramos la meta.
