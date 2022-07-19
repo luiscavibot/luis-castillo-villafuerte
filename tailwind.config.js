@@ -12,6 +12,9 @@ module.exports = {
 				verde: '#39A6A3',
 				gris: '#363337',
 			},
+			fontFamily: {
+				roboto: 'Roboto',
+			},
 		},
 	},
 	plugins: [],

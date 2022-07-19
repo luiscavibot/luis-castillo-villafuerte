@@ -68,7 +68,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-fondoOscuro text-claro">
+			<main className="bg-fondoOscuro text-claro font-roboto">
 				<div className="container relative mx-auto px-12">
 					<div className="h-screen relative flex items-center">
 						<div className="absolute z-10 top-0 right-0 animate__fadeIn animate__animated animate__delay-2s">
