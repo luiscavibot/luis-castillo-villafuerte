@@ -16,7 +16,8 @@ export default function PresentacionPrincipal() {
 			<h2 className="text-lg mt-2">
 				y soy un <span className="text-2xl">Full stack developer </span>{' '}
 				con experiencia en el manejo de
-				<span className="text-2xl"> Cloud Services</span>.
+				<span className="text-2xl"> Cloud Services</span> &#40;+4
+				años&#41;.
 			</h2>
 			<p className="text-verde mt-14 font-semibold">
 				Disfruto construir aplicaciones web extraordinarias y tengo la

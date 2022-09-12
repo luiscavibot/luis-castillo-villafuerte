@@ -58,6 +58,7 @@ const Skills = () => {
 		{
 			name: 'Complementarios',
 			techs: [
+				'Inglés intermedio',
 				'SEO',
 				'Gestores de contenido',
 				'Figma',
