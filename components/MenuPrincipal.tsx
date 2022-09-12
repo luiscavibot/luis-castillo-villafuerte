@@ -12,7 +12,7 @@ interface GoTos {
 const MenuPrincipal: FC<Props> = ({ goTos }) => {
 	return (
 		<div className="flex justify-end">
-			<ul className="text-white flex gap-16 pt-14 col-auto font-bold text-lg">
+			<ul className="text-white flex gap-16 col-auto font-bold text-lg">
 				<li
 					onClick={goTos.goToAcercaDeMi}
 					className="cursor-pointer hover:text-verde transition-colors">

@@ -45,10 +45,9 @@ const Skills = () => {
 			name: 'Cloud Services',
 			techs: [
 				'Amazon EC2',
-				'Amazon RDS',
-				'Dynamo DB',
+				'Amazon RDS y Dynamo DB',
+				'Amazon ECS y Fargate',
 				'Amazon S3',
-				'Amazon Route 53',
 				'Amazon CloudFront',
 			],
 		},
@@ -58,7 +57,13 @@ const Skills = () => {
 		},
 		{
 			name: 'Complementarios',
-			techs: ['Figma', 'Scrum', 'SEO', 'Accesibility'],
+			techs: [
+				'SEO',
+				'Gestores de contenido',
+				'Figma',
+				'Scrum',
+				'Accesibility',
+			],
 		},
 		{
 			name: 'Best Practices',

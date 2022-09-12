@@ -13,7 +13,11 @@ export default function PresentacionPrincipal() {
 					&#160;&#47;&gt;
 				</span>
 			</h1>
-			<h2 className="text-3xl mt-2">y soy un Full stack developer.</h2>
+			<h2 className="text-lg mt-2">
+				y soy un <span className="text-2xl">Full stack developer </span>{' '}
+				con experiencia en el manejo de
+				<span className="text-2xl"> Cloud Services</span>.
+			</h2>
 			<p className="text-verde mt-14 font-semibold">
 				Disfruto construir aplicaciones web extraordinarias y tengo la
 				oportunidad de trabajar en la{' '}

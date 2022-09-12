@@ -12,6 +12,7 @@ import FirmaContactoSecunadrio from '../components/FirmaContactoSecunadrio';
 import ExperienciaLaboral from '../components/ExperienciaLaboral';
 import Image from 'next/future/image';
 import circuferenciaCocentrica1 from '../public/img/circuferencia-cocentrica-1.png';
+import awsCertifiedCloudPractitioner from '../public/img/aws-certified-cloud-practitioner.png';
 import PortfolioContent from '../components/PortfolioContent';
 import OtrosProyectos from '../components/OtrosProyectos';
 import Skills from '../components/Skills';
@@ -71,7 +72,20 @@ const Home: NextPage = () => {
 			<main className="bg-fondoOscuro text-claro font-roboto">
 				<div className="container relative mx-auto px-12">
 					<div className="h-screen relative flex items-center">
-						<div className="absolute z-10 top-0 right-0 animate__fadeIn animate__animated animate__delay-2s">
+						<div className="flex justify-between items-center absolute z-10 top-0 inset-x-0 animate__fadeIn animate__animated animate__delay-2s mt-5">
+							<div
+								className="hover:scale-105 transition-transform cursor-pointer"
+								onClick={() => {
+									window.open(
+										'https://www.credly.com/badges/3cb4f6c2-7f7e-4425-9fa2-a30bbb8a1431/public_url',
+										'_blank'
+									);
+								}}>
+								<Image
+									src={awsCertifiedCloudPractitioner}
+									className="w-20"
+								/>
+							</div>
 							<MenuPrincipal
 								goTos={{
 									goToAcercaDeMi,
@@ -81,7 +95,7 @@ const Home: NextPage = () => {
 								}}
 							/>
 						</div>
-						<div className="flex w-full">
+						<div className="flex w-full gap-2">
 							<div className="basis-1/2 animate__animated animate__zoomIn">
 								<PresentacionPrincipal />
 							</div>

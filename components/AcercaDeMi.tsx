@@ -40,9 +40,9 @@ export const AcercaDeMi = () => {
 				colección de proyectos de los cuales me siento muy orgulloso.
 				Las tecnologías que uso están basadas en Javascript.{' '}
 				<span className="text-verde font-semibold">
-					Trabajo del lado del front, back y ocasionalmente en
-					operaciones; además, tengo la oportunidad de seguir
-					liderando
+					Trabajo del lado del front, back y administro la cuenta de
+					AWS &#40;Servicios en la nube&#41; de mi institución ;
+					además, tengo la oportunidad de seguir liderando
 				</span>
 				.
 			</p>
