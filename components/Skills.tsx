@@ -35,7 +35,6 @@ const Skills = () => {
 				'Firebase',
 				'AWS Lambda',
 				'AWS API Gateway',
-
 				'Cloudformation',
 				'SQS',
 				'Terraform',
@@ -59,16 +58,15 @@ const Skills = () => {
 			name: 'Complementarios',
 			techs: [
 				'Inglés intermedio',
-				'SEO',
+				'WebHooks',
 				'Gestores de contenido',
 				'Figma',
 				'Scrum',
-				'Accesibility',
 			],
 		},
 		{
 			name: 'Best Practices',
-			techs: ['Clean code', 'SOLID'],
+			techs: ['Clean code', 'SOLID', 'SEO', 'Accesibility'],
 		},
 		{
 			name: 'Soft skills',
