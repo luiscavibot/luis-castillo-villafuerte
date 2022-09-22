@@ -72,20 +72,7 @@ const Home: NextPage = () => {
 			<main className="bg-fondoOscuro text-claro font-roboto">
 				<div className="container relative mx-auto px-12">
 					<div className="h-screen relative flex items-center">
-						<div className="flex justify-between items-center absolute z-10 top-0 inset-x-0 animate__fadeIn animate__animated animate__delay-2s mt-5">
-							<div
-								className="hover:scale-105 transition-transform cursor-pointer"
-								onClick={() => {
-									window.open(
-										'https://www.credly.com/badges/3cb4f6c2-7f7e-4425-9fa2-a30bbb8a1431/public_url',
-										'_blank'
-									);
-								}}>
-								<Image
-									src={awsCertifiedCloudPractitioner}
-									className="w-20"
-								/>
-							</div>
+						<div className="flex justify-end items-center absolute z-10 top-0 inset-x-0 animate__fadeIn animate__animated animate__delay-2s mt-5">
 							<MenuPrincipal
 								goTos={{
 									goToAcercaDeMi,
@@ -122,6 +109,21 @@ const Home: NextPage = () => {
 						</div>
 						<div className="col-start-8 col-span-3">
 							<FotoPersonal />
+							<div className="flex justify-end">
+								<div
+									className="hover:scale-105 transition-transform cursor-pointer"
+									onClick={() => {
+										window.open(
+											'https://www.credly.com/badges/3cb4f6c2-7f7e-4425-9fa2-a30bbb8a1431/public_url',
+											'_blank'
+										);
+									}}>
+									<Image
+										src={awsCertifiedCloudPractitioner}
+										className="w-20 animate-pulse"
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div
@@ -131,7 +133,7 @@ const Home: NextPage = () => {
 					</div>
 					<div
 						ref={portafolioRef}
-						className="pt-28 grid grid-cols-12 gap-x-5 relative z-10"
+						className="pt-28 grid grid-cols-12 gap-x-3 gap-y-0 relative z-10"
 						id="portafolio">
 						<Image
 							src={circuferenciaCocentrica1}

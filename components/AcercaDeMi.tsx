@@ -25,11 +25,11 @@ export const AcercaDeMi = () => {
 				digital.
 			</p>
 			<p className="mb-3">
-				En los últimos años he descubierto nuevas cosas de este mundo
-				con las cuales he quedado maravillado. Hoy en día uso diversos
-				frameworks de desarrollo y tecnologías complementarias, además
-				de metodologías ágiles, que continuamente me permiten crear
-				productos de alta calidad.{' '}
+				En los últimos años he descubierto nuevas tecnologías con las
+				cuales he quedado maravillado. Hoy en día uso diversos
+				frameworks y tecnologías propias del ecosistema de desarrollo,
+				además de metodologías ágiles, que continuamente me permiten
+				crear productos de alta calidad.{' '}
 				<span className="text-verde font-semibold">
 					Definitivamente, el desarrollo es una de mis pasiones
 				</span>
@@ -41,8 +41,8 @@ export const AcercaDeMi = () => {
 				Las tecnologías que uso están basadas en Javascript.{' '}
 				<span className="text-verde font-semibold">
 					Trabajo del lado del front, back y administro la cuenta de
-					AWS &#40;Servicios en la nube&#41; de mi institución ;
-					además, tengo la oportunidad de seguir liderando
+					AWS &#40;Servicios en la nube&#41; de la institución donde
+					laboro; además, tengo la oportunidad de seguir liderando
 				</span>
 				.
 			</p>

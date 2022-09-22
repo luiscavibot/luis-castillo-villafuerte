@@ -10,7 +10,7 @@ const Skills = () => {
 				'VueJS',
 				'Typescript',
 				'NextJS',
-				'Redux',
+				'React Native',
 				'TailwindCSS',
 				'Sass',
 			],
@@ -36,8 +36,7 @@ const Skills = () => {
 				'AWS Lambda',
 				'AWS API Gateway',
 				'Cloudformation',
-				'SQS',
-				'Terraform',
+				'Amazon SQS y Amazon SNS',
 			],
 		},
 		{
@@ -46,18 +45,19 @@ const Skills = () => {
 				'Amazon EC2',
 				'Amazon RDS y Dynamo DB',
 				'Amazon ECS y Fargate',
-				'Amazon S3',
-				'Amazon CloudFront',
+				'Amazon S3 y Amazon CloudFront',
+				'Amazon CloudMap',
+				'Amazon Codepipeline, CodeCommit, Codebuild y CodeDeploy',
 			],
 		},
 		{
-			name: 'DevOps',
-			techs: ['Docker', 'Git', 'GitHub', 'GitLab', 'Nginx', 'PM2'],
+			name: 'Otras tecnologías',
+			techs: ['Docker', 'Git, GitHub y GitLab', 'Nginx', 'PM2'],
 		},
 		{
 			name: 'Complementarios',
 			techs: [
-				'Inglés intermedio',
+				'Inglés técnico',
 				'WebHooks',
 				'Gestores de contenido',
 				'Figma',
@@ -69,8 +69,8 @@ const Skills = () => {
 			techs: ['Clean code', 'SOLID', 'SEO', 'Accesibility'],
 		},
 		{
-			name: 'Soft skills',
-			techs: ['Leadership', 'Comunicación efectiva', 'Flexibilidad'],
+			name: 'Certificaciones',
+			techs: ['Amazon Cloud Praticioner'],
 		},
 	];
 	return (

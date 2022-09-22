@@ -64,7 +64,7 @@ const ExperienciaLaboral = () => {
 						<span className="font-normal text-base">&#125;</span>
 					</h1>
 					<p className="text-claro/70 mb-3">
-						Ene. 2022 - actualidad &#40; 7 meses &#41;
+						Ene. 2022 - actualidad &#40; 9 meses &#41;
 					</p>
 					<div>
 						<ListItem text="Actualmente laboro en esta oficina como líder del equipo de diseño y desarrollo." />

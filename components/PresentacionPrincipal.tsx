@@ -14,9 +14,12 @@ export default function PresentacionPrincipal() {
 				</span>
 			</h1>
 			<h2 className="text-lg mt-2">
-				y soy un <span className="text-2xl">Full stack developer </span>{' '}
+				y soy un{' '}
+				<span className="text-2xl">
+					Full stack developer - Semi senior{' '}
+				</span>{' '}
 				con experiencia en el manejo de
-				<span className="text-2xl"> Cloud Services</span> &#40;+4
+				<span className="text-2xl"> servicios de AWS </span> &#40;+4
 				años&#41;.
 			</h2>
 			<p className="text-verde mt-14 font-semibold">

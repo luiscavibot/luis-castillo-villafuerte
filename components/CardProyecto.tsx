@@ -12,7 +12,7 @@ const CardProyecto: FC<Props> = ({ src, link, title }) => {
 			onClick={() => {
 				window.open(`${link}`, '_blank');
 			}}
-			className="hover:scale-105 transition-transform cursor-pointer before:z-0 before:hover:z-0 before:block before:absolute before:rounded-lg before:inset-0 before:translate-x-4 before:-translate-y-4 before:bg-verde/20 before:border-3 relative inline-block">
+			className="hover:scale-105 transition-transform cursor-pointer">
 			<Image
 				src={src}
 				className="grayscale-0"
