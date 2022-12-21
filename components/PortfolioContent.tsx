@@ -4,11 +4,35 @@ import proyectoPosgrado from '../public/img/proyecto-posgrado.png';
 import proyectoUnmsm from '../public/img/proyecto-unmsm.png';
 import proyectoAc19p from '../public/img/proyecto-ac19p.png';
 import proyectoCmUnmsm from '../public/img/proyecto-cm-unmsm.png';
+import proyectoUnac from '../public/img/proyecto-unac.jpg';
 
 const PortfolioContent = () => {
 	const proyectsData = [
 		{
 			id: '0',
+			tools: [
+				{
+					area: 'Frontend',
+					tecnologies: ['React', 'Typescript', 'Material UI'],
+				},
+				{
+					area: 'Backend',
+					tecnologies: ['Java', 'MySQL', 'JWT'],
+				},
+				{
+					area: 'Deployment',
+					tecnologies: ['On-premise'],
+				},
+			],
+			content: `Este proyecto busca administrar las matrículas al programa 
+			de tutorías de la Universidad Nacional del Callao. Se trata de una plataforma web con 
+			capacidad de seguimiento y manejo de roles de usuarios para cada proceso definido.`,
+			title: 'Sistema de Tutorías para la UNAC',
+			image: proyectoUnac,
+			link: 'https://unac-tutorias-app.vercel.app/',
+		},
+		{
+			id: '1',
 			tools: [
 				{
 					area: 'Frontend',
@@ -41,7 +65,7 @@ const PortfolioContent = () => {
 			link: 'http://cm.unmsm.click',
 		},
 		{
-			id: '1',
+			id: '2',
 			tools: [
 				{
 					area: 'Frontend',
@@ -76,7 +100,7 @@ const PortfolioContent = () => {
 			link: 'https://ac19p.unmsm.edu.pe/',
 		},
 		{
-			id: '2',
+			id: '3',
 			tools: [
 				{
 					area: 'Frontend',
@@ -104,7 +128,7 @@ const PortfolioContent = () => {
 			link: 'https://estudios-posgrado-prototype.vercel.app/maestrias',
 		},
 		{
-			id: '3',
+			id: '4',
 			tools: [
 				{
 					area: 'Frontend',
