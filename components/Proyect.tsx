@@ -23,10 +23,10 @@ const Proyect: FC<Props> = ({ data }) => {
 	const { tools, content, title, image, link } = data;
 	return (
 		<>
-			<div className="col-start-3 col-span-4">
+			<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-4">
 				<CardProyecto src={image} link={link} title={title} />
 			</div>
-			<div className="col-span-4 flex text-sm">
+			<div className="col-span-full sm:col-span-4 flex text-sm">
 				<div
 					onClick={() => {
 						window.open(`${link}`, '_blank');
@@ -41,7 +41,7 @@ const Proyect: FC<Props> = ({ data }) => {
 					<p className="text-sm">{content}</p>
 				</div>
 			</div>
-			<div className="flex flex-wrap gap-x-4 gap-y-2 text-xs col-start-3 col-span-8 outline outline-2 rounded-md outline-transparencia mb-12 mt-2 p-3">
+			<div className="flex flex-wrap gap-x-4 gap-y-2 text-xs col-start-1 sm:col-start-3 col-span-full sm:col-span-8 outline outline-2 rounded-md outline-transparencia mb-12 mt-2 p-3">
 				<div className="flex items-baseline gap-1">
 					<ul className="flex flex-wrap items-center gap-2">
 						<li className="font-bold">{data.tools[0].area}: </li>
