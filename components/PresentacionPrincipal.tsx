@@ -5,7 +5,7 @@ export default function PresentacionPrincipal() {
 	return (
 		<>
 			<p className="text-verde text-xl font-medium">Hola, mi nombre es</p>
-			<h1 className="text-white mt-2 text-4xl md:text-5xl">
+			<h1 className="text-white mt-2 text-3xl sm:text-4xl md:text-5xl">
 				{/* Envuelve Typical en un span y aplica la clase */}
 				<span className="inline-block cursor-typical">
 					<Typical
@@ -27,7 +27,7 @@ export default function PresentacionPrincipal() {
 			<h2 className="text-lg mt-2">
 				y soy un <span className="text-2xl">Full stack developer </span>{' '}
 				con experiencia en <span className="text-2xl"> DevOps </span> y
-				servicios de
+				tecnologías de
 				<span className="text-2xl"> Amazon Web Services </span> &#40;+6
 				años&#41;.
 			</h2>

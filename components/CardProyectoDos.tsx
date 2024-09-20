@@ -15,7 +15,8 @@ const CardProyectoDos: FC<Props> = ({ title, description, tools, link }) => {
 			onClick={() => {
 				window.open(`${link}`, '_blank');
 			}}
-			className="flex flex-col justify-between col-span-1 rounded-lg p-6 text-sm bg-white/10 cursor-pointer hover:scale-105 transition-transform hover:bg-white/20">
+			className="flex flex-col justify-between col-span-full sm:col-span-1 rounded-lg p-6 text-sm bg-white/10 cursor-pointer hover:scale-105 transition-transform hover:bg-white/20"
+		>
 			<div>
 				<div className="flex justify-between mb-4 items-center">
 					<h1 className="w-[90%] font-bold text-white mr-2">

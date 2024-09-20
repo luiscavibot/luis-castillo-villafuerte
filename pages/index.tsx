@@ -141,7 +141,7 @@ const Home: NextPage = () => {
 							<SubTtitulo title="Portafolio" />
 						</div>
 						<PortfolioContent />
-						<div className="mb-16 flex flex-col items-center justify-center col-start-3 col-span-8">
+						<div className="mb-16 flex flex-col items-center justify-center col-start-1 sm:col-start-3 col-span-full sm:col-span-8">
 							<OtrosProyectos />
 						</div>
 					</div>
@@ -155,26 +155,26 @@ const Home: NextPage = () => {
 						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
 						ref={acercaDeMiRef}
 					>
-						<div className="flex items-center col-start-3 col-span-full">
+						<div className="flex items-center col-start-1 sm:col-start-3 col-span-full">
 							<SubTtitulo title="Acerca de mí" />
 						</div>
 						<div
-							className="col-start-3 col-span-4 text-sm"
+							className="col-start-1 sm:col-start-3 col-span-full sm:col-span-4 text-sm"
 							ref={presentacionDivRef}
 						>
 							<AcercaDeMi />
 						</div>
-						<div className="col-start-8 col-span-3">
+						<div className="col-start-1 sm:col-start-8 col-span-full sm:col-span-3">
 							<FotoPersonal />
 						</div>
 					</div>
 
 					<div className="pt-60 grid grid-cols-12 relative z-10">
-						<div className="flex flex-col items-center justify-center col-start-3 col-span-8 mb-6">
+						<div className="flex flex-col items-center justify-center col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mb-6">
 							<p className="text-verde text-2xl font-bold">
 								¡Gracias por tu visita!
 							</p>
-							<p className="text-xs font-thin mt-4">
+							<p className="text-[0.6rem] sm:text-xs font-thin mt-4">
 								Diseñado &amp; desarrollado por Luis Castillo en
 								Lima, Perú.
 							</p>

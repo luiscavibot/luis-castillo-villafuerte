@@ -22,10 +22,10 @@ const ExperienciaLaboral = () => {
 				src={circuferenciaCocentrica1}
 				className="absolute right-0 top-0"
 			/>
-			<div className="flex items-center col-start-3 col-span-full relative z-10">
+			<div className="flex items-center col-start-1 sm:col-start-3 col-span-full relative z-10">
 				<SubTtitulo title="Experiencia Laboral" />
 			</div>
-			<div className="col-start-3 col-span-2 text-sm relative z-10">
+			<div className="hidden sm:block col-start-1 sm:col-start-3 col-span-2 text-sm relative z-10">
 				<div className="mt-14 text-white">
 					<div
 						onClick={(e) => handleClick(e, 0)}
@@ -46,7 +46,7 @@ const ExperienciaLaboral = () => {
 				</div>
 			</div>
 			{selectionButton === 0 ? (
-				<div className="col-span-6 text-sm relative z-10">
+				<div className="col-span-full sm:col-span-6 text-sm relative z-10">
 					<h1 className="mt-14 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
 						Oficina de Automatización de la DSBBC-UNMSM{' '}
