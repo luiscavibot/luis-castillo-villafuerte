@@ -1,7 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import ListItem from '../components/ListItem';
 import circuferenciaCocentrica1 from '../public/img/circuferencia-cocentrica-1.png';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import { SubTtitulo } from '../components/SubTtitulo';
 import { useState } from 'react';
 const ExperienciaLaboral = () => {
@@ -30,14 +30,16 @@ const ExperienciaLaboral = () => {
 						onClick={(e) => handleClick(e, 0)}
 						className={`hover:bg-white/20 hover:scale-105 transition-transform font-semibold rounded-lg items-center h-24 bg-white/10 flex justify-center relative cursor-pointer ${
 							selectionButton === 0 && styleSelectionButton
-						}`}>
+						}`}
+					>
 						<p>Full time</p>
 					</div>
 					<div
 						onClick={(e) => handleClick(e, 1)}
 						className={`hover:bg-white/20 hover:scale-105 transition-transform mt-3 font-semibold rounded-lg items-center h-24 bg-white/10 flex justify-center relative cursor-pointer ${
 							selectionButton === 1 && styleSelectionButton
-						}`}>
+						}`}
+					>
 						<p>Freelance</p>
 					</div>
 				</div>

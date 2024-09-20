@@ -1,6 +1,6 @@
 import React, { FC, useId } from 'react';
 import CardProyecto from '../components/CardProyecto';
-import { StaticImageData } from 'next/future/image';
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
 
 interface Props {
 	data: Information;
@@ -31,7 +31,8 @@ const Proyect: FC<Props> = ({ data }) => {
 					onClick={() => {
 						window.open(`${link}`, '_blank');
 					}}
-					className="cursor-pointer bg-gris hover:scale-105 transition-transform p-9 text-center relative z-20 rounded-lg ">
+					className="cursor-pointer bg-gris hover:scale-105 transition-transform p-9 text-center relative z-20 rounded-lg "
+				>
 					<h1 className="font-bold text-sm mb-2 text-verde">
 						<span className="font-normal text-sm">&#91;</span>&#160;
 						{title}&#160;
@@ -47,7 +48,8 @@ const Proyect: FC<Props> = ({ data }) => {
 						{data.tools[0].tecnologies.map((tool) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-gris"
-								key={data.id + data.title}>
+								key={data.id + data.title}
+							>
 								{tool}
 							</li>
 						))}
@@ -59,7 +61,8 @@ const Proyect: FC<Props> = ({ data }) => {
 						{data.tools[1].tecnologies.map((tool) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-gris"
-								key={data.id + data.title}>
+								key={data.id + data.title}
+							>
 								{tool}
 							</li>
 						))}
@@ -71,7 +74,8 @@ const Proyect: FC<Props> = ({ data }) => {
 						{data.tools[2].tecnologies.map((tool) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-gris"
-								key={data.id + data.title}>
+								key={data.id + data.title}
+							>
 								{tool}
 							</li>
 						))}

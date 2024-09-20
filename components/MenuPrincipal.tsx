@@ -14,24 +14,34 @@ const MenuPrincipal: FC<Props> = ({ goTos }) => {
 		<div className="flex justify-end">
 			<ul className="text-white flex gap-16 col-auto font-bold text-lg">
 				<li
-					onClick={goTos.goToAcercaDeMi}
-					className="cursor-pointer hover:text-verde transition-colors">
-					Acercar de mí
-				</li>
-				<li
+					onClick={goTos.goToSkills}
 					className="cursor-pointer hover:text-verde transition-colors"
-					onClick={goTos.goToExperiencia}>
-					Experiencia
-				</li>
-				<li
-					onClick={goTos.goToPortafolio}
-					className="cursor-pointer hover:text-verde transition-colors">
-					Portafolio
+				>
+					Certificaciones
 				</li>
 				<li
 					onClick={goTos.goToSkills}
-					className="cursor-pointer hover:text-verde transition-colors">
+					className="cursor-pointer hover:text-verde transition-colors"
+				>
 					Skills
+				</li>
+				<li
+					onClick={goTos.goToPortafolio}
+					className="cursor-pointer hover:text-verde transition-colors"
+				>
+					Portafolio
+				</li>
+				<li
+					className="cursor-pointer hover:text-verde transition-colors"
+					onClick={goTos.goToExperiencia}
+				>
+					Experiencia
+				</li>
+				<li
+					onClick={goTos.goToAcercaDeMi}
+					className="cursor-pointer hover:text-verde transition-colors"
+				>
+					Acercar de mí
 				</li>
 			</ul>
 		</div>

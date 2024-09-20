@@ -10,20 +10,22 @@ import { FotoPersonal } from '../components/FotoPersonal';
 import { useEffect, useRef, useState } from 'react';
 import FirmaContactoSecunadrio from '../components/FirmaContactoSecunadrio';
 import ExperienciaLaboral from '../components/ExperienciaLaboral';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import circuferenciaCocentrica1 from '../public/img/circuferencia-cocentrica-1.png';
 import awsCertifiedCloudPractitioner from '../public/img/aws-certified-cloud-practitioner.png';
 import PortfolioContent from '../components/PortfolioContent';
 import OtrosProyectos from '../components/OtrosProyectos';
 import Skills from '../components/Skills';
 import 'animate.css';
+import Certificaciones from '../components/Certificaciones';
 
 const Home: NextPage = () => {
+	const certificacionesDivRef = useRef<HTMLDivElement>(null);
 	const presentacionDivRef = useRef<HTMLDivElement>(null);
 	const [showFirma, setShowFirma] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
-			const div = presentacionDivRef.current;
+			const div = skillsRef.current;
 			const { y } = div?.getBoundingClientRect()!;
 			if (y < 700) {
 				setShowFirma(true);
@@ -69,77 +71,71 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-fondoOscuro text-claro font-roboto">
+			<main className="gradient-background text-claro font-roboto">
 				<div className="container relative mx-auto px-12">
 					<div className="h-screen relative flex items-center">
-						<div className="flex justify-end items-center absolute z-10 top-0 inset-x-0 animate__fadeIn animate__animated animate__delay-2s mt-5">
+						<div className="hidden xl:flex justify-end items-center absolute z-10 top-0 inset-x-0 animate__fadeIn animate__animated animate__delay-2s mt-5">
 							<MenuPrincipal
 								goTos={{
-									goToAcercaDeMi,
 									goToExperiencia,
 									goToPortafolio,
 									goToSkills,
+									goToAcercaDeMi,
 								}}
 							/>
 						</div>
 						<div className="flex w-full gap-2">
-							<div className="basis-1/2 animate__animated animate__zoomIn">
+							<div className="basis-full lg:basis-1/2 animate__animated animate__zoomIn">
 								<PresentacionPrincipal />
 							</div>
-							<div className="basis-1/2 flex justify-center animate__animated animate__rotateIn">
+							<div className="hidden lg:flex basis-1/2  justify-center animate__animated animate__rotateIn">
 								<AnimacionAtomica />
 							</div>
 						</div>
 						{!showFirma && (
-							<div className="absolute w-full bottom-0 pb-9 animate__fadeIn animate__animated">
+							<div className="hidden md:block absolute w-full bottom-0 pb-9 animate__fadeIn animate__animated">
 								<FirmaContactoPrincipal />
 							</div>
 						)}
 					</div>
 					<div
-						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
-						ref={acercaDeMiRef}>
-						<div className="flex items-center col-start-3 col-span-full">
-							<SubTtitulo title="Acerca de mí" />
+						ref={certificacionesDivRef}
+						className="pt-28 grid grid-cols-12 relative z-10"
+						id="Certificaciones"
+					>
+						<div className="flex items-center col-start-1 sm:col-start-3 col-span-full">
+							<SubTtitulo title="Certificaciones" />
 						</div>
-						<div
-							className="col-start-3 col-span-4 text-sm"
-							ref={presentacionDivRef}>
-							<AcercaDeMi />
-						</div>
-						<div className="col-start-8 col-span-3">
-							<FotoPersonal />
-							<div className="flex justify-end">
-								<div
-									className="hover:scale-105 transition-transform cursor-pointer"
-									onClick={() => {
-										window.open(
-											'https://www.credly.com/badges/3cb4f6c2-7f7e-4425-9fa2-a30bbb8a1431/public_url',
-											'_blank'
-										);
-									}}>
-									<Image
-										src={awsCertifiedCloudPractitioner}
-										className="w-20 animate-pulse"
-									/>
-								</div>
-							</div>
+						<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mt-14">
+							<Certificaciones />
 						</div>
 					</div>
 					<div
-						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
-						ref={experienciaMiRef}>
-						<ExperienciaLaboral />
-					</div>
-					<div
-						ref={portafolioRef}
-						className="pt-28 grid grid-cols-12 gap-x-3 gap-y-0 relative z-10"
-						id="portafolio">
+						ref={skillsRef}
+						className="pt-28 grid grid-cols-12 relative z-10"
+						id="skills"
+					>
 						<Image
 							src={circuferenciaCocentrica1}
 							className="absolute right-0 top-0"
 						/>
-						<div className="mb-24 flex items-center col-start-3 col-span-full">
+						<div className="flex items-center col-start-1 sm:col-start-3 col-span-full">
+							<SubTtitulo title="Skills" />
+						</div>
+						<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mt-14">
+							<Skills />
+						</div>
+					</div>
+					<div
+						ref={portafolioRef}
+						className="pt-28 grid grid-cols-12 gap-x-3 gap-y-0 relative z-10"
+						id="portafolio"
+					>
+						<Image
+							src={circuferenciaCocentrica1}
+							className="absolute right-0 top-0"
+						/>
+						<div className="mb-24 flex items-center col-start-1 sm:col-start-3 col-span-full">
 							<SubTtitulo title="Portafolio" />
 						</div>
 						<PortfolioContent />
@@ -148,20 +144,29 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 					<div
-						ref={skillsRef}
-						className="pt-28 grid grid-cols-12 relative z-10"
-						id="skills">
-						<Image
-							src={circuferenciaCocentrica1}
-							className="absolute right-0 top-0"
-						/>
+						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
+						ref={experienciaMiRef}
+					>
+						<ExperienciaLaboral />
+					</div>
+					<div
+						className="pt-28 grid grid-cols-12 gap-5 relative z-10"
+						ref={acercaDeMiRef}
+					>
 						<div className="flex items-center col-start-3 col-span-full">
-							<SubTtitulo title="Skills" />
+							<SubTtitulo title="Acerca de mí" />
 						</div>
-						<div className="col-start-3 col-span-8 mt-14">
-							<Skills />
+						<div
+							className="col-start-3 col-span-4 text-sm"
+							ref={presentacionDivRef}
+						>
+							<AcercaDeMi />
+						</div>
+						<div className="col-start-8 col-span-3">
+							<FotoPersonal />
 						</div>
 					</div>
+
 					<div className="pt-60 grid grid-cols-12 relative z-10">
 						<div className="flex flex-col items-center justify-center col-start-3 col-span-8 mb-6">
 							<p className="text-verde text-2xl font-bold">

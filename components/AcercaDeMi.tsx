@@ -5,46 +5,47 @@ export const AcercaDeMi = () => {
 		<>
 			<p className="mt-14 mb-3">
 				<span className="text-verde font-semibold">
-					Soy ingeniero y disfruto materializar grandes ideas.
+					Soy ingeniero con una gran pasión por hacer realidad ideas a
+					través de la tecnología.{' '}
 				</span>
-				&nbsp; Mi interés por el desarrollo web comenzó en el año 2018
-				cuando me encontraba laborando en la biblioteca central de la
-				Universidad Nacional Mayor de San Marcos, como líder de uno de
-				sus equipos de TI donde me confiaron renovar la imagen digital
-				de la institución. Opté por usar una plantilla de Wordpress para
-				cumplir el objetivo; sin embargo, me topé con una alta demanda
-				de personalización del proyecto; por lo cual, decidí hacer
-				borrón y cuenta nueva. Cambié la estrategia y me aventuré en
-				reunir un equipo profesional con la capacidad de hacer un diseño
-				y desarrollo propio usando tecnologías básicas como
+				&nbsp; Mi interés por el desarrollo web comenzó en el 2018,
+				mientras trabajaba en la Biblioteca Central de la Universidad
+				Nacional Mayor de San Marcos como líder de uno de los equipos de
+				TI. Me encomendaron renovar la imagen digital de la institución
+				y, en un inicio, opté por una plantilla de WordPress. Sin
+				embargo, al enfrentar una alta demanda de personalización,
+				decidí replantear el proyecto desde cero. Formé un equipo
+				profesional con el objetivo de crear un diseño y desarrollo
+				propio, utilizando tecnologías como
 				<span className="text-verde font-semibold">
-					&nbsp;HTML, CSS y Javascript puro
+					&nbsp;HTML, CSS y Javascript vanilla
 				</span>
-				. Aunque al inicio fue muy complicado, luego de muchos esfuerzos
-				e investigación, logramos producir un interesante producto
-				digital.
+				. Aunque los comienzos fueron desafiantes, tras mucho esfuerzo e
+				investigación, logramos producir un producto digital notable.
 			</p>
 			<p className="mb-3">
-				En los últimos años he descubierto nuevas tecnologías con las
-				cuales he quedado maravillado. Hoy en día uso diversos
-				frameworks y tecnologías propias del ecosistema de desarrollo,
-				además de metodologías ágiles, que continuamente me permiten
+				En los últimos años, he explorado nuevas tecnologías que me han
+				maravillado. Hoy en día, utilizo diversos frameworks y
+				herramientas del ecosistema de desarrollo, DevOps y
+				arquitectura, junto con metodologías ágiles que me permiten
 				crear productos de alta calidad.{' '}
 				<span className="text-verde font-semibold">
-					Definitivamente, el desarrollo es una de mis pasiones
+					Sin duda, el software es una de mis mayores pasiones.
 				</span>
-				.
 			</p>
 			<p>
-				Actualmente laboro en un nuevo equipo de TI y tengo una amplia
-				colección de proyectos de los cuales me siento muy orgulloso.
-				Las tecnologías que uso están basadas en Javascript.{' '}
+				Actualmente, trabajo en Chile para la consultora WiTI y, desde
+				hace dos años, formo parte del equipo de Cencommerce de
+				Cencosud, donde realizo tareas de desarrollo y arquitectura. He
+				acumulado una amplia colección de proyectos de los cuales me
+				siento muy orgulloso, especialmente en tecnologías basadas en
+				JavaScript y AWS.{' '}
 				<span className="text-verde font-semibold">
-					Trabajo del lado del front, back y administro la cuenta de
-					AWS &#40;Servicios en la nube&#41; de la institución donde
-					laboro; además, tengo la oportunidad de seguir liderando
+					Trabajo tanto en frontend como en backend y en la
+					infraestructura, gestionando además la cuenta de AWS
+					(servicios en la nube) de la Universidad Nacional Mayor de
+					San Marcos como freelance.
 				</span>
-				.
 			</p>
 		</>
 	);

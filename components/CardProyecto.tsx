@@ -1,4 +1,5 @@
-import Image, { StaticImageData } from 'next/future/image';
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 interface Props {
@@ -12,7 +13,8 @@ const CardProyecto: FC<Props> = ({ src, link, title }) => {
 			onClick={() => {
 				window.open(`${link}`, '_blank');
 			}}
-			className="hover:scale-105 transition-transform cursor-pointer">
+			className="hover:scale-105 transition-transform cursor-pointer"
+		>
 			<Image
 				src={src}
 				className="grayscale-0"

@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import React from 'react';
 import primeraOrbita from '../public/img/primera-orbita-cuadrada.png';
 import segundaOrbita from '../public/img/segunda-orbita-cuadrada.png';
@@ -7,28 +7,29 @@ import cuartaOrbita from '../public/img/cuarta-orbita-cuadrada.png';
 
 export default function AnimacionAtomica() {
 	return (
-		<div className="w-full relative -top-1/4 -translate-y-1/2">
+		<div className="scale-[0.8] xl:scale-100 w-full relative -top-1/4 -translate-y-1/2">
 			<Image
+				alt="Primera orbita"
 				src={primeraOrbita}
-				className="absolute top-1/2 right-0 primera-orbita"
+				className="absolute top-[80%] xl:top-1/2 right-0 primera-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>
 			<Image
 				src={segundaOrbita}
-				className="absolute top-1/2 right-0 segunda-orbita"
+				className="absolute top-[80%] xl:top-1/2 right-0 segunda-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>
 			<Image
 				src={terceraOrbita}
-				className="absolute top-1/2 right-0 tercera-orbita"
+				className="absolute top-[80%] xl:top-1/2 right-0 tercera-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>
 			<Image
 				src={cuartaOrbita}
-				className="absolute top-1/2 right-0 cuarta-orbita"
+				className="absolute top-[80%] xl:top-1/2 right-0 cuarta-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>

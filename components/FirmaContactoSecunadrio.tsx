@@ -5,7 +5,7 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 const FirmaContactoSecunadrio = () => {
 	return (
-		<div className="fixed inset-x-0 bottom-0">
+		<div className="hidden sm:block fixed inset-x-0 bottom-0">
 			<div className="grid grid-cols-12 animate__fadeIn animate__animated">
 				<div className="flex flex-col items-end justify-end col-start-1 col-span-1">
 					<div className="flex flex-col justify-center items-center relative -right-3">
@@ -17,7 +17,8 @@ const FirmaContactoSecunadrio = () => {
 										'https://github.com/luiscavibot',
 										'_blank'
 									);
-								}}>
+								}}
+							>
 								<AiFillGithub
 									size="27px"
 									className="fill-claro hover:fill-verde"
@@ -30,7 +31,8 @@ const FirmaContactoSecunadrio = () => {
 										'https://www.linkedin.com/in/luiscavibot/',
 										'_blank'
 									);
-								}}>
+								}}
+							>
 								<AiFillLinkedin
 									size="27px"
 									className="fill-claro hover:fill-verde"
@@ -43,7 +45,8 @@ const FirmaContactoSecunadrio = () => {
 										'https://twitter.com/luiscavibot',
 										'_blank'
 									);
-								}}>
+								}}
+							>
 								<AiOutlineTwitter
 									size="27px"
 									className="fill-claro hover:fill-verde"
@@ -63,7 +66,8 @@ const FirmaContactoSecunadrio = () => {
 									'mailto:lcastillov123@gmail.com',
 									'_blank'
 								);
-							}}>
+							}}
+						>
 							lcastillov123@gmail.com
 						</p>
 						<div className="w-[1px] h-[200px] bg-claro"></div>

@@ -68,10 +68,6 @@ const Skills = () => {
 			name: 'Best Practices',
 			techs: ['Clean code', 'SOLID', 'SEO', 'Accesibility'],
 		},
-		{
-			name: 'Certificaciones',
-			techs: ['Amazon Cloud Praticioner'],
-		},
 	];
 	return (
 		<div className="grid-cols-4 grid gap-x-5">
@@ -79,7 +75,8 @@ const Skills = () => {
 				return (
 					<div
 						key={skill.name + index}
-						className="col-span-1 flex flex-col mb-7 relative z-10">
+						className="text-center sm:text-left col-span-full sm:col-span-1 flex flex-col mb-7 relative z-10"
+					>
 						<h1 className="font-bold text-sm mb-2 text-verde bg-white/10 py-1 px-2 rounded-md text-center">
 							<span className="font-normal text-sm">&#91;</span>
 							&#160;{skill.name}&#160;
@@ -90,7 +87,8 @@ const Skills = () => {
 								return (
 									<li
 										key={tech + index}
-										className="mb-4 hover:text-verde">
+										className="mb-4 hover:text-verde"
+									>
 										{tech}
 									</li>
 								);
