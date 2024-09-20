@@ -18,6 +18,7 @@ const ExperienciaLaboral = () => {
 	return (
 		<>
 			<Image
+				alt="Circuferencia cocentrica 1"
 				src={circuferenciaCocentrica1}
 				className="absolute right-0 top-0"
 			/>

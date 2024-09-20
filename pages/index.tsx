@@ -116,6 +116,7 @@ const Home: NextPage = () => {
 						id="skills"
 					>
 						<Image
+							alt="circuferencia-cocentrica-1"
 							src={circuferenciaCocentrica1}
 							className="absolute right-0 top-0"
 						/>
@@ -132,6 +133,7 @@ const Home: NextPage = () => {
 						id="portafolio"
 					>
 						<Image
+							alt="circuferencia-cocentrica-1"
 							src={circuferenciaCocentrica1}
 							className="absolute right-0 top-0"
 						/>

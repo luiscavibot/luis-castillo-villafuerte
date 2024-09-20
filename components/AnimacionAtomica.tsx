@@ -16,18 +16,21 @@ export default function AnimacionAtomica() {
 				draggable="false"
 			/>
 			<Image
+				alt="Segunda orbita"
 				src={segundaOrbita}
 				className="absolute top-[80%] xl:top-1/2 right-0 segunda-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>
 			<Image
+				alt="Tercera orbita"
 				src={terceraOrbita}
 				className="absolute top-[80%] xl:top-1/2 right-0 tercera-orbita tranform-to-white"
 				quality={100}
 				draggable="false"
 			/>
 			<Image
+				alt="Cuarta orbita"
 				src={cuartaOrbita}
 				className="absolute top-[80%] xl:top-1/2 right-0 cuarta-orbita tranform-to-white"
 				quality={100}
