@@ -1,23 +1,34 @@
 import React from 'react';
+import Typical from 'react-typical';
 
 export default function PresentacionPrincipal() {
 	return (
 		<>
 			<p className="text-verde text-xl font-medium">Hola, mi nombre es</p>
-			<h1 className="text-white mt-2 text-4xl md:text-5xl ">
-				<span className="text-white/50 font-thin text-4xl">
-					&lt;&#160;
-				</span>
-				Luis Castillo <span className="hidden md:inline">V.</span>
-				<span className="text-white/50 font-thin text-4xl">
-					&#160;&#47;&gt;
+			<h1 className="text-white mt-2 text-4xl md:text-5xl">
+				{/* Envuelve Typical en un span y aplica la clase */}
+				<span className="inline-block cursor-typical">
+					<Typical
+						steps={[
+							'< Luis',
+							1000,
+							'< Luis Castillo ',
+							800,
+							'< Luis Castillo />',
+							1000,
+							'< Luis Castillo V. ',
+							500,
+							'< Luis Castillo V. />',
+						]}
+						wrapper="span"
+					/>
 				</span>
 			</h1>
 			<h2 className="text-lg mt-2">
 				y soy un <span className="text-2xl">Full stack developer </span>{' '}
-				con experiencia en <span className="text-2xl"> DevOps, </span>{' '}
-				especializado en la gestión y optimización de
-				<span className="text-2xl"> servicios de AWS </span> &#40;+6
+				con experiencia en <span className="text-2xl"> DevOps </span> y
+				servicios de
+				<span className="text-2xl"> Amazon Web Services </span> &#40;+6
 				años&#41;.
 			</h2>
 			<p className="text-verde mt-14 font-semibold">

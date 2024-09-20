@@ -10,7 +10,8 @@ module.exports = {
 				fondoOscuro: '#231E23',
 				claro: '#DEEEEA',
 				verde: '#39A6A3',
-				gris: '#363337',
+				gris: '#05130eb5',
+				transparencia: 'rgb(255 255 255 / 0.1)',
 			},
 			fontFamily: {
 				roboto: 'Roboto',

@@ -41,13 +41,13 @@ const Proyect: FC<Props> = ({ data }) => {
 					<p className="text-sm">{content}</p>
 				</div>
 			</div>
-			<div className="flex flex-wrap gap-x-4 gap-y-2 text-xs col-start-3 col-span-8 outline outline-2 rounded-md outline-gris mb-12 mt-2 p-3">
+			<div className="flex flex-wrap gap-x-4 gap-y-2 text-xs col-start-3 col-span-8 outline outline-2 rounded-md outline-transparencia mb-12 mt-2 p-3">
 				<div className="flex items-baseline gap-1">
 					<ul className="flex flex-wrap items-center gap-2">
 						<li className="font-bold">{data.tools[0].area}: </li>
 						{data.tools[0].tecnologies.map((tool) => (
 							<li
-								className="flex-none py-1 rounded-lg px-2 bg-gris"
+								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
 								key={data.id + data.title}
 							>
 								{tool}
@@ -60,7 +60,7 @@ const Proyect: FC<Props> = ({ data }) => {
 						<li className="font-bold">{data.tools[1].area}: </li>
 						{data.tools[1].tecnologies.map((tool) => (
 							<li
-								className="flex-none py-1 rounded-lg px-2 bg-gris"
+								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
 								key={data.id + data.title}
 							>
 								{tool}
@@ -73,7 +73,7 @@ const Proyect: FC<Props> = ({ data }) => {
 						<li className="font-bold">{data.tools[2].area}: </li>
 						{data.tools[2].tecnologies.map((tool) => (
 							<li
-								className="flex-none py-1 rounded-lg px-2 bg-gris"
+								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
 								key={data.id + data.title}
 							>
 								{tool}
