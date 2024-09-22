@@ -17,7 +17,7 @@ const CardProyecto: FC<Props> = ({ src, link, title }) => {
 		>
 			<Image
 				src={src}
-				className="grayscale-0"
+				className="grayscale hover:grayscale-0"
 				alt={title}
 				quality={100}
 			/>
