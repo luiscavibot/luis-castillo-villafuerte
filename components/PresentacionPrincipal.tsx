@@ -5,7 +5,7 @@ export default function PresentacionPrincipal() {
 	return (
 		<>
 			<p className="text-verde text-xl font-medium">Hola, mi nombre es</p>
-			<h1 className="text-white mt-2 text-3xl sm:text-4xl md:text-5xl">
+			<h1 className="text-naranja mt-2 text-3xl sm:text-4xl md:text-5xl">
 				{/* Envuelve Typical en un span y aplica la clase */}
 				<span className="inline-block cursor-typical">
 					<Typical

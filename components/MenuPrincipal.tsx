@@ -17,13 +17,13 @@ const MenuPrincipal: FC<Props> = ({ goTos }) => {
 					onClick={goTos.goToSkills}
 					className="cursor-pointer hover:text-verde transition-colors"
 				>
-					Certificaciones
+					Skills
 				</li>
 				<li
 					onClick={goTos.goToSkills}
 					className="cursor-pointer hover:text-verde transition-colors"
 				>
-					Skills
+					Certificaciones
 				</li>
 				<li
 					onClick={goTos.goToPortafolio}

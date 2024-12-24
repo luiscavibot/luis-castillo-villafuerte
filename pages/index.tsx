@@ -7,7 +7,7 @@ import PresentacionPrincipal from '../components/PresentacionPrincipal';
 import { SubTtitulo } from '../components/SubTtitulo';
 import { AcercaDeMi } from '../components/AcercaDeMi';
 import { FotoPersonal } from '../components/FotoPersonal';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import FirmaContactoSecunadrio from '../components/FirmaContactoSecunadrio';
 import ExperienciaLaboral from '../components/ExperienciaLaboral';
 import Image from 'next/image';
@@ -18,7 +18,73 @@ import OtrosProyectos from '../components/OtrosProyectos';
 import Skills from '../components/Skills';
 import 'animate.css';
 import Certificaciones from '../components/Certificaciones';
+import SkillsTable from '../components/SkillsTable';
 
+const data = [
+	{
+		entidad: 'CENCOSUD',
+		proyecto: 'Plataforma de Ecommerce',
+		roles: [
+			{
+				rol: 'Frontend Developer',
+				responsabilidades: [
+					'Mantener Sistema Microfrontend',
+					'Desarrollar interfaces',
+					'Desarrollar formularios',
+					'Diseñar e implementar arquitectura para optimización de performance',
+					'Crear pruebas unitarias',
+					'Mantener biblioteca UI',
+				],
+				tecnologias: [
+					'Module federation',
+					'Nextjs',
+					'Typescript',
+					'React context',
+					'Redux',
+					'Styled-components',
+				],
+				periodo: '2023-2024',
+			},
+		],
+	},
+	{
+		entidad: 'CENCOSUD',
+		proyecto: 'Gestor de medias',
+		roles: [
+			{
+				rol: 'Frontend Developer',
+				responsabilidades: ['Desarrollo de interface'],
+				tecnologias: ['UseForm'],
+				periodo: 'Desarrollo de interface',
+			},
+			{
+				rol: 'Backend Developer',
+				responsabilidades: ['Desarrollo de interface'],
+				tecnologias: ['Amazon Cloudfront'],
+				periodo: 'Desarrollo de interface',
+			},
+		],
+	},
+	{
+		entidad: 'UNMSM',
+		proyecto: 'Sitio web institucional',
+		roles: [
+			{
+				rol: 'Frontend Developer',
+				responsabilidades: Array(6).fill('Desarrollo de interface'),
+				tecnologias: [
+					'Amazon EKS',
+					'Amazon Elastic Load Balancer',
+					'Jest',
+					'Storybook',
+					'Desarrollo de interface',
+					'Desarrollo de interface',
+				],
+				periodo: '2022-2024',
+			},
+		],
+	},
+];
 const Home: NextPage = () => {
 	const certificacionesDivRef = useRef<HTMLDivElement>(null);
 	const presentacionDivRef = useRef<HTMLDivElement>(null);
@@ -78,8 +144,8 @@ const Home: NextPage = () => {
 							<MenuPrincipal
 								goTos={{
 									goToExperiencia,
-									goToPortafolio,
 									goToSkills,
+									goToPortafolio,
 									goToAcercaDeMi,
 								}}
 							/>
@@ -98,18 +164,7 @@ const Home: NextPage = () => {
 							</div>
 						)}
 					</div>
-					<div
-						ref={certificacionesDivRef}
-						className="pt-28 grid grid-cols-12 relative z-10"
-						id="Certificaciones"
-					>
-						<div className="flex items-center col-start-1 sm:col-start-3 col-span-full">
-							<SubTtitulo title="Certificaciones" />
-						</div>
-						<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mt-14">
-							<Certificaciones />
-						</div>
-					</div>
+					{/* <SkillsTable /> */}
 					<div
 						ref={skillsRef}
 						className="pt-28 grid grid-cols-12 relative z-10"
@@ -125,6 +180,18 @@ const Home: NextPage = () => {
 						</div>
 						<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mt-14">
 							<Skills />
+						</div>
+					</div>
+					<div
+						ref={certificacionesDivRef}
+						className="pt-28 grid grid-cols-12 relative z-10"
+						id="Certificaciones"
+					>
+						<div className="flex items-center col-start-1 sm:col-start-3 col-span-full">
+							<SubTtitulo title="Certificaciones" />
+						</div>
+						<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mt-14">
+							<Certificaciones />
 						</div>
 					</div>
 					<div
@@ -168,7 +235,6 @@ const Home: NextPage = () => {
 							<FotoPersonal />
 						</div>
 					</div>
-
 					<div className="pt-60 grid grid-cols-12 relative z-10">
 						<div className="flex flex-col items-center justify-center col-start-1 sm:col-start-3 col-span-full sm:col-span-8 mb-6">
 							<p className="text-verde text-2xl font-bold">

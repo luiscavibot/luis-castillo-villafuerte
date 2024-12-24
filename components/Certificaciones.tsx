@@ -6,7 +6,7 @@ import awsCertifiedDeveloperAssociate from '../public/img/aws-certified-develope
 const Certificaciones = () => {
 	return (
 		<div className="grid-cols-4 grid gap-x-5 ">
-			<div className="grayscale hover:grayscale-0 col-span-4 sm:col-span-1 flex flex-col mb-7 relative z-10">
+			<div className="col-span-4 sm:col-span-1 flex flex-col mb-7 relative z-10">
 				<h1 className="font-bold text-sm mb-2 text-verde bg-white/10 py-1 px-2 rounded-md text-center">
 					<span className="font-normal text-sm">&#91;</span>
 					&nbsp;AWS Certified Cloud Practitioner&nbsp;
@@ -28,7 +28,7 @@ const Certificaciones = () => {
 					</li>
 				</ul>
 			</div>
-			<div className="grayscale hover:grayscale-0 col-span-4 sm:col-span-1 flex flex-col mb-7 relative z-10">
+			<div className="col-span-4 sm:col-span-1 flex flex-col mb-7 relative z-10">
 				<h1 className="font-bold text-sm mb-2 text-verde bg-white/10 py-1 px-2 rounded-md text-center">
 					<span className="font-normal text-sm">&#91;</span>
 					&nbsp;AWS Certified Developer – Associate&nbsp;

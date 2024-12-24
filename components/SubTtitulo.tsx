@@ -7,18 +7,15 @@ interface Props {
 export const SubTtitulo: FC<Props> = ({ title }) => {
 	return (
 		<>
-			<BiRadioCircleMarked
-				color="rgba(222, 238, 234, 0.2)"
-				className="text-xl "
-			/>
+			<BiRadioCircleMarked color="rgb(166 76 56)" className="text-xl " />
 			<h1>
-				<span className="text-white/50 font-thin text-xl">
+				<span className="text-naranja/50 font-thin text-3xl">
 					&lt;&#160;
 				</span>
-				<span className="text-xl text-white font-semibold">
+				<span className="text-3xl text-naranja font-semibold">
 					{title}
 				</span>
-				<span className="text-white/50 font-thin text-xl">
+				<span className="text-naranja/50 font-thin text-3xl">
 					&#160;&#47;&gt;
 				</span>
 			</h1>

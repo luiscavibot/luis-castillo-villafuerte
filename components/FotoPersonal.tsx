@@ -9,7 +9,7 @@ export const FotoPersonal = () => {
 			<Image
 				src={yo}
 				quality={100}
-				className="grayscale hover:grayscale-0"
+				className="grayscale-0"
 				alt="Luis Castillo"
 			/>
 		</div>

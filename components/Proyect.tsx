@@ -31,7 +31,7 @@ const Proyect: FC<Props> = ({ data }) => {
 					onClick={() => {
 						window.open(`${link}`, '_blank');
 					}}
-					className="cursor-pointer bg-gris hover:scale-105 transition-transform p-9 text-center relative z-20 rounded-lg "
+					className="cursor-pointer bg-gris transition-transform p-9 text-center relative z-20 rounded-lg "
 				>
 					<h1 className="font-bold text-sm mb-2 text-verde">
 						<span className="font-normal text-sm">&#91;</span>&#160;
