@@ -4,17 +4,11 @@ import Image from 'next/image';
 import React, { FC } from 'react';
 interface Props {
 	src: StaticImageData;
-	link: string;
 	title: string;
 }
-const CardProyecto: FC<Props> = ({ src, link, title }) => {
+const CardProyecto: FC<Props> = ({ src, title }) => {
 	return (
-		<div
-			// onClick={() => {
-			// 	window.open(`${link}`, '_blank');
-			// }}
-			className=" transition-transform cursor-pointer"
-		>
+		<div className=" transition-transform">
 			<Image
 				src={src}
 				// className="grayscale hover:grayscale-0"

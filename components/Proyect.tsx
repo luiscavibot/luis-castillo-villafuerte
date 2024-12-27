@@ -6,12 +6,10 @@ interface Props {
 	data: Information;
 }
 interface Information {
-	id: string;
 	tools: Tools[];
 	content: string;
 	title: string;
 	image: StaticImageData;
-	link: string;
 }
 
 interface Tools {
@@ -20,23 +18,18 @@ interface Tools {
 }
 
 const Proyect: FC<Props> = ({ data }) => {
-	const { tools, content, title, image, link } = data;
+	const { tools, content, title, image } = data;
 	return (
 		<>
 			<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-4">
-				<CardProyecto src={image} link={link} title={title} />
+				<CardProyecto src={image} title={title} />
 			</div>
 			<div className="col-span-full sm:col-span-4 flex text-sm">
-				<div
-					onClick={() => {
-						window.open(`${link}`, '_blank');
-					}}
-					className="cursor-pointer bg-gris transition-transform p-9 text-center relative z-20 rounded-lg "
-				>
+				<div className=" bg-gris transition-transform p-9 text-center relative z-20 rounded-lg ">
 					<h1 className="font-bold text-sm mb-2 text-verde">
-						<span className="font-normal text-sm">&#91;</span>&#160;
+						<span className="font-normal text-sm"></span>&#160;
 						{title}&#160;
-						<span className="font-normal text-sm">&#93;</span>
+						<span className="font-normal text-sm"></span>
 					</h1>
 					<p className="text-sm">{content}</p>
 				</div>
@@ -45,10 +38,10 @@ const Proyect: FC<Props> = ({ data }) => {
 				<div className="flex items-baseline gap-1">
 					<ul className="flex flex-wrap items-center gap-2">
 						<li className="font-bold">{data.tools[0].area}: </li>
-						{data.tools[0].tecnologies.map((tool) => (
+						{data.tools[0].tecnologies.map((tool, index) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
-								key={data.id + data.title}
+								key={index + data.title}
 							>
 								{tool}
 							</li>
@@ -58,10 +51,10 @@ const Proyect: FC<Props> = ({ data }) => {
 				<div className="flex items-baseline gap-1">
 					<ul className="flex flex-wrap items-center gap-2">
 						<li className="font-bold">{data.tools[1].area}: </li>
-						{data.tools[1].tecnologies.map((tool) => (
+						{data.tools[1].tecnologies.map((tool, index) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
-								key={data.id + data.title}
+								key={index + data.title}
 							>
 								{tool}
 							</li>
@@ -71,10 +64,10 @@ const Proyect: FC<Props> = ({ data }) => {
 				<div className="flex items-baseline gap-1">
 					<ul className="flex flex-wrap items-center gap-2">
 						<li className="font-bold">{data.tools[2].area}: </li>
-						{data.tools[2].tecnologies.map((tool) => (
+						{data.tools[2].tecnologies.map((tool, index) => (
 							<li
 								className="flex-none py-1 rounded-lg px-2 bg-transparencia"
-								key={data.id + data.title}
+								key={index + data.title}
 							>
 								{tool}
 							</li>

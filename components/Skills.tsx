@@ -132,6 +132,24 @@ const Skills = () => {
 				{ name: 'Amazon Bedrock', rating: 5 },
 			],
 		},
+		{
+			name: 'SERVIDORES WEB',
+			techs: [
+				{ name: 'NGINX', rating: 3 },
+				{ name: 'Ubuntu Server', rating: 3 },
+				{ name: 'Kubernetes', rating: 3 },
+				{ name: 'PM2', rating: 4 },
+			],
+		},
+		{
+			name: 'COMPLEMENTARIOS',
+			techs: [
+				{ name: 'Jest', rating: 5 },
+				{ name: 'Figma', rating: 3 },
+				{ name: 'Jira', rating: 3 },
+				{ name: 'Visual Studio Code ', rating: 3 },
+			],
+		},
 	];
 	const renderRating = (rating: number) => {
 		return (
