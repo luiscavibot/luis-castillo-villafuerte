@@ -10,6 +10,7 @@ interface Information {
 	content: string;
 	title: string;
 	image: StaticImageData;
+	rol?: string;
 }
 
 interface Tools {
@@ -18,18 +19,22 @@ interface Tools {
 }
 
 const Proyect: FC<Props> = ({ data }) => {
-	const { tools, content, title, image } = data;
+	const { tools, content, title, image, rol } = data;
 	return (
 		<>
 			<div className="col-start-1 sm:col-start-3 col-span-full sm:col-span-4">
 				<CardProyecto src={image} title={title} />
 			</div>
 			<div className="col-span-full sm:col-span-4 flex text-sm">
-				<div className=" bg-gris transition-transform p-9 text-center relative z-20 rounded-lg ">
+				<div className=" bg-white/5 transition-transform p-9 text-center relative z-20 rounded-lg ">
 					<h1 className="font-bold text-sm mb-2 text-verde">
 						<span className="font-normal text-sm"></span>&#160;
 						{title}&#160;
-						<span className="font-normal text-sm"></span>
+						{rol && (
+							<p className="font-normal text-sm text-claro">
+								&#40; Participación: {rol} &#41;
+							</p>
+						)}
 					</h1>
 					<p className="text-sm">{content}</p>
 				</div>
@@ -74,6 +79,40 @@ const Proyect: FC<Props> = ({ data }) => {
 						))}
 					</ul>
 				</div>
+				{data.tools[3]?.area && (
+					<div className="flex items-baseline gap-1">
+						<ul className="flex flex-wrap items-center gap-2">
+							<li className="font-bold">
+								{data.tools[3].area}:{' '}
+							</li>
+							{data.tools[3].tecnologies.map((tool, index) => (
+								<li
+									className="flex-none py-1 rounded-lg px-2 bg-transparencia"
+									key={index + data.title}
+								>
+									{tool}
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
+				{data.tools[4]?.area && (
+					<div className="flex items-baseline gap-1">
+						<ul className="flex flex-wrap items-center gap-2">
+							<li className="font-bold">
+								{data.tools[4].area}:{' '}
+							</li>
+							{data.tools[4].tecnologies.map((tool, index) => (
+								<li
+									className="flex-none py-1 rounded-lg px-2 bg-transparencia"
+									key={index + data.title}
+								>
+									{tool}
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
 			</div>
 		</>
 	);

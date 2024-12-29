@@ -13,18 +13,20 @@ const Skills = () => {
 				{ name: 'NextJS', rating: 5 },
 				{ name: 'React Native', rating: 3 },
 				{ name: 'TailwindCSS', rating: 5 },
+				{ name: 'Storybook', rating: 4 },
 			],
 		},
 		{
 			name: 'BACKEND & BDs',
 			techs: [
+				{ name: 'NestJS', rating: 5 },
 				{ name: 'Node', rating: 5 },
-				{ name: 'NestJS', rating: 4 },
-				{ name: 'Socket.io', rating: 3 },
-				{ name: 'GraphQL', rating: 4 },
+				{ name: 'RestAPI', rating: 5 },
+				{ name: 'Redis', rating: 4 },
 				{ name: 'MySQL', rating: 4 },
 				{ name: 'MongoDB', rating: 4 },
-				{ name: 'RestAPI', rating: 5 },
+				{ name: 'GraphQL', rating: 3 },
+				{ name: 'Socket.io', rating: 3 },
 				{ name: 'Firebase', rating: 3 },
 			],
 		},
@@ -34,21 +36,22 @@ const Skills = () => {
 				{ name: 'Dependency Injection', rating: 5 },
 				{ name: 'Singleton', rating: 5 },
 				{ name: 'Observer', rating: 5 },
-				{ name: 'Factory Method', rating: 4 },
-				{ name: 'Abstract factory', rating: 4 },
 				{ name: 'Facade', rating: 5 },
 				{ name: 'Adapter', rating: 5 },
 				{ name: 'Decorator', rating: 5 },
+				{ name: 'Factory Method', rating: 4 },
+				{ name: 'Abstract factory', rating: 4 },
 			],
 		},
 		{
 			name: 'PATRONES ARQUITECTÓNICOS',
 			techs: [
+				{ name: 'Microfrontend', rating: 5 },
 				{ name: 'Clean Architecture', rating: 5 },
 				{ name: 'Microservicios', rating: 5 },
 				{ name: 'Backend for Frontend', rating: 5 },
-				{ name: 'Orientada a eventos', rating: 5 },
-				{ name: 'Serverless', rating: 5 },
+				{ name: 'Orientada a eventos', rating: 4 },
+				{ name: 'Serverless', rating: 4 },
 			],
 		},
 		{
@@ -67,9 +70,9 @@ const Skills = () => {
 				{ name: 'Kubernetes', rating: 4 },
 				{ name: 'Terraform', rating: 4 },
 				{ name: 'CloudFormation', rating: 4 },
-				{ name: 'Prometheus y Grafana', rating: 4 },
-				{ name: 'New Relic', rating: 4 },
-				{ name: 'SonarQube', rating: 4 },
+				{ name: 'Prometheus y Grafana', rating: 3 },
+				{ name: 'New Relic', rating: 3 },
+				{ name: 'SonarQube', rating: 3 },
 			],
 		},
 		{
@@ -80,8 +83,12 @@ const Skills = () => {
 					rating: 5,
 				},
 				{
-					name: 'AWS IAM y AWS Cognito',
+					name: 'AWS IAM ',
 					rating: 5,
+				},
+				{
+					name: 'AWS Cognito',
+					rating: 3,
 				},
 				{
 					name: 'AWS WAF y AWS Shield',
@@ -103,7 +110,7 @@ const Skills = () => {
 				{ name: 'Amazon DynamoDB', rating: 4 },
 				{ name: 'Amazon RDS', rating: 4 },
 				{ name: 'Amazon SQS y Amazon SNS', rating: 4 },
-				{ name: 'AWS Fargate', rating: 5 },
+				{ name: 'AWS Fargate', rating: 4 },
 				{ name: 'AWS Lambda', rating: 5 },
 				{ name: 'AWS Step Functions', rating: 4 },
 				{ name: 'Amazon EventBridge', rating: 4 },
@@ -120,16 +127,16 @@ const Skills = () => {
 				{ name: 'Amazon S3', rating: 5 },
 				{ name: 'Amazon CloudFront', rating: 5 },
 				{ name: 'Amazon Route 53', rating: 5 },
-				{ name: 'Amazon CloudWatch', rating: 5 },
+				{ name: 'Amazon CloudWatch', rating: 3 },
 			],
 		},
 		{
 			name: 'IA',
 			techs: [
 				{ name: 'OpenAI', rating: 5 },
-				{ name: 'Amazon Rekognition', rating: 5 },
-				{ name: 'Amazon Textract', rating: 5 },
-				{ name: 'Amazon Bedrock', rating: 5 },
+				{ name: 'Amazon Rekognition', rating: 4 },
+				{ name: 'Amazon Textract', rating: 4 },
+				{ name: 'Amazon Bedrock', rating: 4 },
 			],
 		},
 		{
@@ -137,7 +144,7 @@ const Skills = () => {
 			techs: [
 				{ name: 'NGINX', rating: 3 },
 				{ name: 'Ubuntu Server', rating: 3 },
-				{ name: 'Kubernetes', rating: 3 },
+				{ name: 'Kubernetes', rating: 4 },
 				{ name: 'PM2', rating: 4 },
 			],
 		},
@@ -192,7 +199,7 @@ const Skills = () => {
 										key={tech.name + index}
 										className="mb-4 flex items-center justify-between group"
 									>
-										<span className="relative text-white group-hover:text-verde transition-colors duration-300">
+										<span className="text-left relative text-white group-hover:text-verde transition-colors duration-300">
 											{tech.name}
 											<span className="absolute bottom-0 left-0 w-0 h-[2px] bg-verde group-hover:w-full transition-all duration-300"></span>
 										</span>

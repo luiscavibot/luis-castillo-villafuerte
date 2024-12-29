@@ -47,6 +47,34 @@ const ExperienciaLaboral = () => {
 			</div>
 			{selectionButton === 0 ? (
 				<div className="col-span-full sm:col-span-6 text-sm relative z-10">
+					<h1 className="mt-10 text-verde text-lg font-semibold">
+						<span className="font-normal text-base">&#123;</span>{' '}
+						WiTI SpA - CENCOSUD{' '}
+						<span className="font-normal text-base">&#125;</span>
+					</h1>
+					<p className="text-claro/70 mb-3">
+						Ene. 2023 - actualidad &#40; 2 años &#41;
+					</p>
+					<div>
+						<ListItem text="Actualmente formo parte del equipo de EASY-Chile, donde participo en el desarrollo de la plataforma de comercio electrónico del negocio" />
+						<ListItem text="Tuve la oportunidad de integrarme al equipo de Cecommerce, donde colaboré en el desarrollo del proyecto Gestor de Medias." />
+						<ListItem text="Trabajé del lado del front, back e infraestructura bajo el ecosistema de tecnologías basadas en Javascript y AWS." />
+						<ListItem text="Mi principal logro en el proyecto Gestor de Medias fue desarrollar una funcionalidad para la aplicación que permitía visualizar en tiempo real la trazabilidad del procesamiento de imágenes. Para ello, utilicé tecnologías como WebSockets, AWS API Gateway y Amazon Step Functions." />
+					</div>
+					<h1 className="mt-10 text-verde text-lg font-semibold">
+						<span className="font-normal text-base">&#123;</span>{' '}
+						Oficina General de Imagen Institucional - UNMSM{' '}
+						<span className="font-normal text-base">&#125;</span>
+					</h1>
+					<p className="text-claro/70 mb-3">
+						Ene. 2022 - Ene. 2023 &#40; 1 año y 1 mes &#41;
+					</p>
+					<div>
+						<ListItem text="Actualmente laboro en esta oficina como líder del equipo de diseño y desarrollo." />
+						<ListItem text="El equipo tiene la responsabilidad de crear productos digitales para incrementar la visibilidad de la universidad como institución lider en formación académica e investigación. " />
+						<ListItem text="Uno de nuestros objetivos más importantes es optimizar todos los sitios web existentes en la universidad, a través del uso de tecnologías y diseños modernos, además de la adopción de buenas prácticas en la construcción de productos digitales." />
+						<ListItem text="Además de desarrolladores y diseñadores UX/UI, el equipo cuenta con un UX Writer." />
+					</div>
 					<h1 className="mt-14 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
 						Oficina de Automatización de la DSBBC-UNMSM{' '}
@@ -60,20 +88,6 @@ const ExperienciaLaboral = () => {
 						<ListItem text="El equipo tuvo la responsabilidad de crear productos digitales de naturaleza académica e investigativa." />
 						<ListItem text="Renovamos el sitio web principal del Sistema de Bibliotecas y creamos diversos repositorios y archivos digitales en la Biblioteca Central de la universidad para lograr la transformación digital." />
 						<ListItem text="Creamos aplicaciones para optimizar algunos procesos de la gestión administrativa." />
-					</div>
-					<h1 className="mt-10 text-verde text-lg font-semibold">
-						<span className="font-normal text-base">&#123;</span>{' '}
-						Oficina General de Imagen Institucional-UNMSM{' '}
-						<span className="font-normal text-base">&#125;</span>
-					</h1>
-					<p className="text-claro/70 mb-3">
-						Ene. 2022 - actualidad &#40; 9 meses &#41;
-					</p>
-					<div>
-						<ListItem text="Actualmente laboro en esta oficina como líder del equipo de diseño y desarrollo." />
-						<ListItem text="El equipo tiene la responsabilidad de crear productos digitales para incrementar la visibilidad de la universidad como institución lider en formación académica e investigación. " />
-						<ListItem text="Uno de nuestros objetivos más importantes es optimizar todos los sitios web existentes en la universidad, a través del uso de tecnologías y diseños modernos, además de la adopción de buenas prácticas en la construcción de productos digitales." />
-						<ListItem text="Además de desarrolladores y diseñadores UX/UI, el equipo cuenta con un UX Writer." />
 					</div>
 				</div>
 			) : (
