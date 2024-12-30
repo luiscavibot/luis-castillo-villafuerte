@@ -56,7 +56,7 @@ export default function PresentacionPrincipal() {
 			</p>
 			<button
 				onClick={() => {
-					window.open('/pdf/cv-luis-castillo.pdf', '_blank');
+					window.open('/pdf/cv-luis-castillo-cv_compressed.pdf', '_blank');
 				}}
 				className="border-2 cursor-pointer bg-white/10 hover:bg-white/25 mt-14 rounded-lg px-4 py-2"
 			>
