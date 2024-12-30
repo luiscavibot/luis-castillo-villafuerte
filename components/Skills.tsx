@@ -48,6 +48,7 @@ const Skills = () => {
 			techs: [
 				{ name: 'Microfrontend', rating: 5 },
 				{ name: 'Clean Architecture', rating: 5 },
+				{ name: 'Arquitectura Hexagonal', rating: 4 },
 				{ name: 'Microservicios', rating: 5 },
 				{ name: 'Backend for Frontend', rating: 5 },
 				{ name: 'Orientada a eventos', rating: 4 },
