@@ -56,10 +56,11 @@ const ExperienciaLaboral = () => {
 						Ene. 2023 - actualidad &#40; 2 años &#41;
 					</p>
 					<div>
-						<ListItem text="Actualmente formo parte del equipo de EASY-Chile, donde participo en el desarrollo de la plataforma de comercio electrónico del negocio" />
+						<ListItem text="Actualmente formo parte del equipo de EASY-Chile, donde participo en el desarrollo de la plataforma de comercio electrónico del negocio." />
 						<ListItem text="Tuve la oportunidad de integrarme al equipo de Cecommerce, donde colaboré en el desarrollo del proyecto Gestor de Medias." />
 						<ListItem text="Trabajé del lado del front, back e infraestructura bajo el ecosistema de tecnologías basadas en Javascript y AWS." />
-						<ListItem text="Mi principal logro en el proyecto Gestor de Medias fue desarrollar una funcionalidad para la aplicación que permitía visualizar en tiempo real la trazabilidad del procesamiento de imágenes. Para ello, utilicé tecnologías como WebSockets, AWS API Gateway y Amazon Step Functions." />
+						<ListItem text="Mi principal logro en el proyecto Gestor de Medias fue desarrollar una funcionalidad para la aplicación que permitía visualizar en tiempo real la trazabilidad del procesamiento de imágenes. Para ello, utilicé principalmente tecnologías como WebSockets, AWS API Gateway y Amazon Step Functions." />
+						<ListItem text="Mi principal aporte en la plataforma de comercio electrónico de EASY fue colaborar en la optimización del rendimiento de la carga del sitio web. Apliqué estrategias basadas en tecnologías como Amazon CloudFront, Amazon Elastic Load Balancer y Kubernetes." />
 					</div>
 					<h1 className="mt-10 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
@@ -70,10 +71,11 @@ const ExperienciaLaboral = () => {
 						Ene. 2022 - Ene. 2023 &#40; 1 año y 1 mes &#41;
 					</p>
 					<div>
-						<ListItem text="Actualmente laboro en esta oficina como líder del equipo de diseño y desarrollo." />
-						<ListItem text="El equipo tiene la responsabilidad de crear productos digitales para incrementar la visibilidad de la universidad como institución lider en formación académica e investigación. " />
-						<ListItem text="Uno de nuestros objetivos más importantes es optimizar todos los sitios web existentes en la universidad, a través del uso de tecnologías y diseños modernos, además de la adopción de buenas prácticas en la construcción de productos digitales." />
-						<ListItem text="Además de desarrolladores y diseñadores UX/UI, el equipo cuenta con un UX Writer." />
+						<ListItem text="Laboré en esta oficina como Líder Técnico del equipo de desarrollo." />
+						<ListItem text="Trabajé del lado del front, back e infraestructura bajo el ecosistema de tecnologías basadas en Javascript y AWS." />
+						<ListItem text="Mi principal logro como Líder técnico fue dirigir el desarrollo de 8 sitios web y 2 aplicaciones web." />
+						<ListItem text="Tuve la responsabilidad de administrar la cuenta de AWS de la institución." />
+						<ListItem text="Definí e implementé un sistema de DevOps que hasta la fecha se mantiene vigente" />
 					</div>
 					<h1 className="mt-14 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
@@ -81,17 +83,51 @@ const ExperienciaLaboral = () => {
 						<span className="font-normal text-base">&#125;</span>
 					</h1>
 					<p className="text-claro/70 mb-3">
-						Jun. 2018 - ene. 2022 &#40; 3 años y 8 meses &#41;
+						Jun. 2018 - ene. 2022 &#40; 3 años y 7 meses &#41;
 					</p>
 					<div>
-						<ListItem text="Laboré como líder del equipo de diseño y desarrollo." />
-						<ListItem text="El equipo tuvo la responsabilidad de crear productos digitales de naturaleza académica e investigativa." />
-						<ListItem text="Renovamos el sitio web principal del Sistema de Bibliotecas y creamos diversos repositorios y archivos digitales en la Biblioteca Central de la universidad para lograr la transformación digital." />
-						<ListItem text="Creamos aplicaciones para optimizar algunos procesos de la gestión administrativa." />
+						<ListItem text="Laboré en esta oficina como Líder Técnico del equipo de desarrollo." />
+						<ListItem text="Trabajé del lado del front, back e infraestructura bajo el ecosistema de tecnologías basadas en Javascript." />
+						<ListItem text="Uno de mis principales logros como Líder técnico fue dirigir el desarrollo de 2 sitios web y 4 aplicaciones web." />
+						<ListItem text="El mayor logro alcanzado fue dirigir el desarrollo el sitio web institucional de la universidad" />
 					</div>
 				</div>
 			) : (
 				<div className="col-span-6 text-sm relative z-10">
+					<h1 className="mt-14 text-verde text-lg font-semibold">
+						<span className="font-normal text-base">&#123;</span>{' '}
+						Centro Cultural UNMSM{' '}
+						<span className="font-normal text-base">&#125;</span>
+					</h1>
+					<p className="text-claro/70 mb-3">
+						Oct. 2024 &#40; 2 meses &#41;
+					</p>
+					<div>
+						<ListItem text="Rol: Fullstack Developer" />
+					</div>
+					<h1 className="mt-14 text-verde text-lg font-semibold">
+						<span className="font-normal text-base">&#123;</span>{' '}
+						Unidad de Posgrado de la Facultad de Ciencias
+						Adminsitrativas de la UNMSM{' '}
+						<span className="font-normal text-base">&#125;</span>
+					</h1>
+					<p className="text-claro/70 mb-3">
+						Jun. 2023 &#40; 4 meses &#41;
+					</p>
+					<div>
+						<ListItem text="Rol: Fullstack Developer" />
+					</div>
+					<h1 className="mt-14 text-verde text-lg font-semibold">
+						<span className="font-normal text-base">&#123;</span>{' '}
+						Universidad Nacional del Callao{' '}
+						<span className="font-normal text-base">&#125;</span>
+					</h1>
+					<p className="text-claro/70 mb-3">
+						Ene. 2023 &#40; 2 meses &#41;
+					</p>
+					<div>
+						<ListItem text="Rol: Frontend Developer" />
+					</div>
 					<h1 className="mt-14 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
 						Discursos visuales sobre lo Afroperuano - Bicentenario
@@ -102,8 +138,7 @@ const ExperienciaLaboral = () => {
 						Ene. 2022 &#40; 2 meses &#41;
 					</p>
 					<div>
-						<ListItem text="Fui contratado como Teach Lead." />
-						<ListItem text="El proyecto visibiliza el trabajo de investigación desarrollado por una comisión de Investigación creada especialmente para este proyecto en el marco del Bicentenario de mi país." />
+						<ListItem text="Rol: Frontend Developer" />
 					</div>
 					<h1 className="mt-10 text-verde text-lg font-semibold">
 						<span className="font-normal text-base">&#123;</span>{' '}
@@ -114,8 +149,7 @@ const ExperienciaLaboral = () => {
 						Jun. 2022 - actualidad &#40; 2 meses &#41;
 					</p>
 					<div>
-						<ListItem text="Actualmente estoy contratado en esta empresa como desarrollar Frontend." />
-						<ListItem text="El proyecto busca construir el sitio web corporativo de la empresa." />
+						<ListItem text="Rol: Frontend Developer" />
 					</div>
 				</div>
 			)}

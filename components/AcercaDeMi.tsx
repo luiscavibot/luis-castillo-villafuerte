@@ -5,8 +5,8 @@ export const AcercaDeMi = () => {
 		<>
 			<p className="mt-14 mb-3">
 				<span className="text-verde font-semibold">
-					Soy ingeniero con una gran pasión por hacer realidad ideas a
-					través de la tecnología.{' '}
+					Soy un ingeniero con una gran pasión por hacer realidad
+					ideas a través de la tecnología.{' '}
 				</span>
 				&nbsp; Mi interés por el desarrollo web comenzó en el 2018,
 				mientras trabajaba en la Biblioteca Central de la Universidad

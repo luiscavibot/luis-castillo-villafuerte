@@ -4,6 +4,48 @@ import CardProyectoDos from './CardProyectoDos';
 const OtrosProyectos = () => {
 	const projectsOthersData = [
 		{
+			title: 'Fondo Editorial de la UNMSM',
+			description: `La UNMSM cuenta con una producción editorial importante que cuenta con un repositorio 
+			digital desarrollado para ofrecer de manera gratuita una serie de libros seleccionados y digitalizados, a través de este proyecto.`,
+			tools: ['PHP', 'MySQL', 'Javascript'],
+			link: 'https://fondoeditorial.unmsm.edu.pe/index.php/fondoeditorial',
+		},
+		{
+			title: 'Facultad de Ciencias Físicas de la UNMSM',
+			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
+			Ciencias Físicas de la UNMSM a sus alumnos y su actual producción científica.`,
+			tools: ['NextJS', 'NodeJS', 'MySQL'],
+			link: 'https://biologia.unmsm.edu.pe/',
+		},
+		{
+			title: 'Facultad de Odontología de la UNMSM',
+			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
+			Odontología de la UNMSM a sus alumnos y su actual producción científica.`,
+			tools: ['NextJS', 'NodeJS', 'MySQL'],
+			link: 'https://biologia.unmsm.edu.pe/',
+		},
+		{
+			title: 'Facultad de Farmacia y Bioquímica de la UNMSM',
+			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
+			Farmacia y Bioquímica de la UNMSM a sus alumnos y su actual producción científica.`,
+			tools: ['NextJS', 'NodeJS', 'MySQL'],
+			link: 'https://biologia.unmsm.edu.pe/',
+		},
+		{
+			title: 'Facultad de Química e Ingeniería Química de la UNMSM',
+			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
+			Química e Ingeniería Química de la UNMSM a sus alumnos y su actual producción científica.`,
+			tools: ['NextJS', 'NodeJS', 'MySQL'],
+			link: 'https://biologia.unmsm.edu.pe/',
+		},
+		{
+			title: 'Facultad de Educación de la UNMSM',
+			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
+			Educación de la UNMSM a sus alumnos y su actual producción científica.`,
+			tools: ['NextJS', 'NodeJS', 'MySQL'],
+			link: 'https://biologia.unmsm.edu.pe/',
+		},
+		{
 			title: 'Facultad de Ciencias Biológicas de la UNMSM',
 			description: `Este proyecto refleja la formación académica que ofrece la Facultad de 
 			Ciencias Biológicas de la UNMSM a sus alumnos y su actual producción científica.`,
@@ -39,13 +81,6 @@ const OtrosProyectos = () => {
 			 de los sucesivos gobiernos desde diciembre de 1939 hasta julio de 1990 del Estado Peruano.`,
 			tools: ['PHP', 'Javascript', 'MySQL'],
 			link: 'https://sisbib.unmsm.edu.pe/Repositorio_ACM/',
-		},
-		{
-			title: 'Fondo Editorial de la UNMSM',
-			description: `La UNMSM cuenta con una producción editorial importante que cuenta con un repositorio 
-			digital desarrollado para ofrecer de manera gratuita una serie de libros seleccionados y digitalizados, a través de este proyecto.`,
-			tools: ['PHP', 'MySQL', 'Javascript'],
-			link: 'https://fondoeditorial.unmsm.edu.pe/index.php/fondoeditorial',
 		},
 	];
 	return (
