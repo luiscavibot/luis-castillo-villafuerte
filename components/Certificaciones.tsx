@@ -15,8 +15,8 @@ const Certificaciones = () => {
 				<ul className="text-sm mt-4 flex justify-center">
 					<li className="mb-4 hover:text-verde hover:scale-105 transition-transform">
 						<a
-							href="https://www.credly.com/badges/1c0318e6-af75-41b9-90fb-002bad76a33c/linked_in_profile"
 							target="_blank"
+							href="https://www.credly.com/badges/d8e6bf7f-812f-49f0-8b51-4436c488595b/linked_in_profile"
 						>
 							<Image
 								src={awsCertifiedCloudPractitioner}
@@ -37,7 +37,7 @@ const Certificaciones = () => {
 				<ul className="text-sm mt-4 flex justify-center">
 					<li className="mb-4 hover:text-verde hover:scale-105 transition-transform">
 						<a
-							href="https://www.credly.com/badges/d8e6bf7f-812f-49f0-8b51-4436c488595b/linked_in_profile"
+							href="https://www.credly.com/badges/1c0318e6-af75-41b9-90fb-002bad76a33c/linked_in_profile"
 							target="_blank"
 						>
 							<Image
