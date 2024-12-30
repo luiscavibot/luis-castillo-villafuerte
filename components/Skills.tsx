@@ -153,6 +153,7 @@ const Skills = () => {
 			name: 'COMPLEMENTARIOS',
 			techs: [
 				{ name: 'Jest', rating: 5 },
+				{ name: 'Playwright', rating: 5 },
 				{ name: 'Figma', rating: 3 },
 				{ name: 'Jira', rating: 3 },
 				{ name: 'Visual Studio Code ', rating: 3 },
